@@ -159,9 +159,4 @@ def get_article_data():
 
     df[['Sentiment', 'Compound Score']] = df['Article Content'].astype(str).apply(lambda x: pd.Series(get_sentiment(x)))
 
-
-
-
-
-
     return df
