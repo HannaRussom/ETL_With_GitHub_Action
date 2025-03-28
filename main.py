@@ -51,7 +51,7 @@ try:
     
     # SQL Insert Query
     insert_query = """
-    INSERT INTO michael (link, title, time_uploaded, author, tags, reading_time, article_content, word_count, sentiment, compound_score)
+    INSERT INTO hanna (link, title, time_uploaded, author, tags, reading_time, article_content, word_count, sentiment, compound_score)
     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
     ON CONFLICT (link) DO NOTHING;  -- Avoids duplicate primary key errors
     """
